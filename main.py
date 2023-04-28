@@ -17,3 +17,14 @@ label_image = QLabel('Картинка')
 
 btn_left = QPushButton('Лево')
 btn_right = QPushButton('Право')
+btn_mirror = QPushButton('Зеркало')
+btn_sharp = QPushButton('Резкозть')
+btn_bw = QPushButton('Ч/Б')
+
+col_1 = QVBoxLayout()  # для 'Папка' и списка
+row_1 = QHBoxLayout()  # для кнопок
+col_2 = QVBoxLayout()  # для 'Картинка' и линии с кнопками
+main_row = QHBoxLayout()  # для всех линий
+
+col_1.addWidget(btn_dir)
+col_1.addWidget(list_images)
